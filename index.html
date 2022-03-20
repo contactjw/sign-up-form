@@ -23,9 +23,40 @@
             </div>
             <div class="sign-up-form">
                 <div class="sign-up-header">Let's do this!</div>
-                <div class="form"></div>
+                <div class="input-section">
+                    <form action="#">
+                        <div>
+                            <label for="fname">FIRST NAME</label>
+                            <br>
+                            <input type="text" id="fname" name="fname"><br><br>
+                            <label for="lname">LAST NAME</label>
+                            <br>
+                            <input type="text" id="lname" name="lname"><br><br>
+                        </div>
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <br>
+                            <input type="email" id="email" name="email"><br><br>
+                            <label for="pnumber">PHONE NUMBER <small>Format: 123-456-7890</small>
+                            </label>
+                            <br>
+                            <input type="tel" id="pnumber" name="pnumber"
+                                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+                        </div>
+                        <div>
+                            <label for="pword">PASSWORD</label>
+                            <br>
+                            <input type="text" id="pword" name="pword"><br><br>
+                            <label for="pword">CONFIRM PASSWORD</label>
+                            <br>
+                            <input type="text" id="pword" name="pword"><br><br>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="create-account-section">Button here!</div>
+            <div class="create-account-section">
+                <input type="submit" value="Submit">
+            </div>
         </div>
     </div>
 
