@@ -24,42 +24,47 @@
             <div class="sign-up-form">
                 <div class="sign-up-header">Let's do this!</div>
                 <div class="input-section">
-                    <form action="#">
-                        <div>
+                    <form action="#" id="my-form">  
+                        <p>
                             <label for="fname">FIRST NAME</label>
                             <br>
-                            <input type="text" id="fname" name="fname"><br><br>
+                            <input type="text" id="fname" name="fname" required><br><br>
+                        </p>
+                        <p>
                             <label for="lname">LAST NAME</label>
                             <br>
-                            <input type="text" id="lname" name="lname"><br><br>
-                        </div>
-                        <div>
+                            <input type="text" id="lname" name="lname" required><br><br> 
+                        </p>
+                        <p>
                             <label for="email">EMAIL</label>
                             <br>
-                            <input type="email" id="email" name="email"><br><br>
-                            <label for="pnumber">PHONE NUMBER <small>Format: 123-456-7890</small>
-                            </label>
+                            <input type="email" id="email" name="email" required><br><br>
+                        </p>
+                        <p>
+                            <label for="pnumber">PHONE NUMBER</label>
                             <br>
-                            <input type="tel" id="pnumber" name="pnumber"
-                                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
-                        </div>
-                        <div>
+                            <input type="tel" id="pnumber" name="pnumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                title="Enter phone number 123-456-7890 format." maxlength="12" required><br><br>
+                        </p>
+                        <p>
                             <label for="pword">PASSWORD</label>
                             <br>
-                            <input type="text" id="pword" name="pword"><br><br>
+                            <input type="text" id="pword" name="pword" required><br><br>
+                        </p>
+                        <p>
                             <label for="pword">CONFIRM PASSWORD</label>
                             <br>
-                            <input type="text" id="pword" name="pword"><br><br>
-                        </div>
+                            <input type="text" id="pword" name="pword" required><br><br>
+                        </p>
                     </form>
                 </div>
             </div>
             <div class="create-account-section">
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" form="my-form">
+                <div class="login">Already have an account? <a href="#">Log in</a></div>
             </div>
         </div>
     </div>
-
 
 </body>
 </html>
