@@ -5,16 +5,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: black;
+}
+
 .container {
-    max-width: 1800px;
+    max-width: 1350px;
     height: 100vh;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr);
     margin: auto;
 }
-
-/* CHANGE SO FONT SCALES DOWN */
 
 .title-side {
     height: 100%;
@@ -78,10 +80,7 @@
 }
 
 .sign-up-form {
-    margin-top: 70px;
-    margin-bottom: 30px;
-    margin-left: -40px;
-    margin-right: -100px;
+    margin: 70px -100px 30px -40px;
     padding: 15px 100px 15px 40px;
     background-color: white;
     box-shadow: -1px 2px 5px rgb(192, 190, 190);
@@ -114,15 +113,55 @@ p input {
     margin-top: 3px;
     padding: 2px 2px 2px 3px;
     width: 175px;
+    height: 38px;
+    background-color: rgba(41,136,70,255);
+    color: white;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    box-shadow: 1px 3px 2px black;
 }
 
+.create-account-section input:hover {
+    cursor: pointer;
+    background-color: rgba(77,171,85,255);
+}
 
 .create-account-section a {
     text-decoration: none;
-    color: green;
+    color: rgba(48,151,59,255);
+    font-weight: bold;
 }
 
 .create-account-section a:visited {
     text-decoration: none;
-    color: green;
+    color: rgba(48,151,59,255);
+    font-weight: bold;
+}
+
+.login {
+    margin-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+@media (max-width: 951px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .title-side {
+        grid-column: 1;
+    }
+
+    .sign-up-side {
+        grid-column: 1;
+    }
+
+    .slogan {
+        margin-top: 0;
+        padding-top: 50px
+    }
+    
 }
