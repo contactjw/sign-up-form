@@ -151,6 +151,10 @@ p input {
         grid-template-columns: 1fr;
     }
 
+    .title {
+        font-size: 40px;
+    }
+
     .title-side {
         height: 250px;
         grid-column: 1;
