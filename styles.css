@@ -152,7 +152,9 @@ p input {
     }
 
     .title-side {
+        height: 250px;
         grid-column: 1;
+        width: 100%;
     }
 
     .sign-up-side {
@@ -162,6 +164,20 @@ p input {
     .slogan {
         margin-top: 0;
         padding-top: 50px
+    }
+
+    .sign-up-form {
+        padding-right: 50px;
+    }
+
+    label {
+        font-size: 8px;
+    }
+
+    .create-account-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
 }
